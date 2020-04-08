@@ -28,4 +28,33 @@ Public Class frmMain
 
     End Sub
 
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
+
+        'declare variables
+        Dim decElcTt As Decimal
+        Dim decWtTt As Decimal
+        Dim decGsTt As Decimal
+        Dim decUtlTt As Decimal
+
+        'determine totals for each row using For Each loop
+        For Each row As UtilitiesDataSet.BillsRow In UtilitiesDataSet.Bills.Rows
+            decElcTt += row.Electricity
+            decWtTt += row.Water
+            decGsTt += row.Gas
+        Next
+        decUtlTt = decElcTt + decWtTt + decGsTt
+
+        'display totals in lables 
+        lblElecTtl.Text = decElcTt.ToString("C2")
+        lblGsTt.Text = decGsTt.ToString("C2")
+        lblWtTtl.Text = decWtTt.ToString("C2")
+
+        lblUtTt.Text = decUtlTt.ToString("C2")
+
+    End Sub
+
 End Class

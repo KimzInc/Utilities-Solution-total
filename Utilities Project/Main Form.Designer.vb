@@ -49,11 +49,6 @@ Partial Class frmMain
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.btnCalc = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -65,6 +60,7 @@ Partial Class frmMain
         Me.lblWtTtl = New System.Windows.Forms.Label()
         Me.lblGsTt = New System.Windows.Forms.Label()
         Me.lblUtTt = New System.Windows.Forms.Label()
+        Me.btnExit = New System.Windows.Forms.Button()
         CType(Me.UtilitiesDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BillsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BillsBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -257,51 +253,6 @@ Partial Class frmMain
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         Me.DataGridViewTextBoxColumn4.Width = 68
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(0, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(0, 0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(0, 0)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(0, 0)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 5
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(0, 0)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
-        Me.Button5.TabIndex = 6
-        Me.Button5.Text = "Button5"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
         'btnCalc
         '
         Me.btnCalc.Location = New System.Drawing.Point(209, 217)
@@ -398,11 +349,21 @@ Partial Class frmMain
         Me.lblUtTt.Size = New System.Drawing.Size(70, 20)
         Me.lblUtTt.TabIndex = 15
         '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(473, 217)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(60, 25)
+        Me.btnExit.TabIndex = 17
+        Me.btnExit.Text = "E&xit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(558, 389)
+        Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.lblUtTt)
         Me.Controls.Add(Me.lblGsTt)
         Me.Controls.Add(Me.lblWtTtl)
@@ -414,11 +375,6 @@ Partial Class frmMain
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnCalc)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.BillsDataGridView)
         Me.Controls.Add(Me.BillsBindingNavigator)
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -459,11 +415,6 @@ Partial Class frmMain
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
     Friend WithEvents btnCalc As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
@@ -475,4 +426,5 @@ Partial Class frmMain
     Friend WithEvents lblWtTtl As Label
     Friend WithEvents lblGsTt As Label
     Friend WithEvents lblUtTt As Label
+    Friend WithEvents btnExit As Button
 End Class
